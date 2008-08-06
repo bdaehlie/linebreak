@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>convertViaOpenPanel</key>
+				<string>id</string>
+				<key>setCheckboxPrefs</key>
+				<string>id</string>
+				<key>setTypePrefs</key>
+				<string>id</string>
+				<key>showAboutBox</key>
+				<string>id</string>
+				<key>showProtectionPanel</key>
+				<string>id</string>
+				<key>toggleModDates</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>appController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>mAskCheckBox</key>
+				<string>NSButton</string>
+				<key>mFoldersCheckBox</key>
+				<string>NSButton</string>
+				<key>mModDatesMenuItem</key>
+				<string>NSMenuItem</string>
+				<key>mProgressBar</key>
+				<string>NSProgressIndicator</string>
+				<key>mProtectionCheckBox</key>
+				<string>NSButton</string>
+				<key>mRecursiveCheckBox</key>
+				<string>NSButton</string>
+				<key>mSetProtectionButton</key>
+				<string>NSButton</string>
+				<key>mTypeSelectPopup</key>
+				<string>NSPopUpButton</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

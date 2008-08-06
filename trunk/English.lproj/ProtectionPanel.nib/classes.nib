@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>addExtension</key>
+				<string>id</string>
+				<key>changeOnlyOrExcludeState</key>
+				<string>id</string>
+				<key>removeSelection</key>
+				<string>id</string>
+				<key>setDefaultExtensions</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>ProtectionPanel</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>mAddExtensionButton</key>
+				<string>NSButton</string>
+				<key>mExcludeRB</key>
+				<string>NSButtonCell</string>
+				<key>mExtensionTextField</key>
+				<string>NSTextField</string>
+				<key>mExtensionsTable</key>
+				<string>NSTableView</string>
+				<key>mOnlyOrExcludeMatrix</key>
+				<string>NSMatrix</string>
+				<key>mOnlyRB</key>
+				<string>NSButtonCell</string>
+				<key>mRemoveSelectionButton</key>
+				<string>NSButton</string>
+				<key>mSetDefaultButton</key>
+				<string>NSButton</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>
