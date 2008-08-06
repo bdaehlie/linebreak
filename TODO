@@ -1,0 +1,3 @@
+============ Future =============
+* Don't change modification date on files that already have the correct line breaks
+* Move "Preserve modification dates" out of menu and into main window UI
