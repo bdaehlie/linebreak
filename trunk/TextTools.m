@@ -29,7 +29,7 @@
 }
 
 +(void)convertFileToUnix:(NSString*)passedFile {
-  FILE *handle = fopen([passedFile cString], "r");
+  FILE *handle = fopen([passedFile UTF8String], "r");
   if (!handle) {
     [self reportConvertFailureForFile:passedFile];
     return;
@@ -56,7 +56,7 @@
   }
   fclose(handle);
 
-  handle = fopen([passedFile cString], "w");
+  handle = fopen([passedFile UTF8String], "w");
   if (!handle) {
     fclose(tmpHandle);
     [self reportConvertFailureForFile:passedFile];
@@ -73,7 +73,7 @@
 }
 
 +(void)convertFileToMac:(NSString*)passedFile {
-  FILE *handle = fopen([passedFile cString], "r");
+  FILE *handle = fopen([passedFile UTF8String], "r");
   if (!handle) {
     [self reportConvertFailureForFile:passedFile];
     return;
@@ -103,7 +103,7 @@
   }
   fclose(handle);
 
-  handle = fopen([passedFile cString], "w");
+  handle = fopen([passedFile UTF8String], "w");
   if (!handle) {
     fclose(tmpHandle);
     [self reportConvertFailureForFile:passedFile];
@@ -120,7 +120,7 @@
 }
 
 +(void)convertFileToDOS:(NSString*)passedFile {
-  FILE *handle = fopen([passedFile cString], "r");
+  FILE *handle = fopen([passedFile UTF8String], "r");
   if (!handle) {
     [self reportConvertFailureForFile:passedFile];
     return;
@@ -152,7 +152,7 @@
   }
   fclose(handle);
 
-  handle = fopen([passedFile cString], "w");
+  handle = fopen([passedFile UTF8String], "w");
   if (!handle) {
     fclose(tmpHandle);
     [self reportConvertFailureForFile:passedFile];
@@ -169,7 +169,7 @@
 }
 
 +(int)detectLBFormat:(NSString*)passedFile {
-  FILE *handle = fopen([passedFile cString], "r");
+  FILE *handle = fopen([passedFile UTF8String], "r");
   if (!handle) {
     NSLog(@"Failed to detect line break format, can't open file at path: %@",
           passedFile);
