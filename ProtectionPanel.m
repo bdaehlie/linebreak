@@ -107,17 +107,18 @@ static ProtectionPanel *sharedInstance = nil;
 }
 
 -(IBAction)removeSelection:(id)sender {
-  int i;
   NSMutableArray *currentFileExtensions;
-  NSArray *selections = [[mExtensionsTable selectedRowEnumerator] allObjects];
+  NSIndexSet *selections = [mExtensionsTable selectedRowIndexes];
   if ([self isExcludeSelected]) {
     currentFileExtensions = [NSMutableArray arrayWithArray:[preferences arrayForKey:NonTextFileExtensionsKey]];
   }
   else {
     currentFileExtensions = [NSMutableArray arrayWithArray:[preferences arrayForKey:TextFileExtensionsKey]];
   }
-  for (i = ([selections count] - 1); i >= 0; i--) {
-    [currentFileExtensions removeObjectAtIndex:[[selections objectAtIndex:i] intValue]];
+  NSUInteger i = [selections lastIndex];
+  while (i != NSNotFound) {
+    [currentFileExtensions removeObjectAtIndex:i];
+    i = [selections indexLessThanIndex:i];
   }
   if ([self isExcludeSelected]) {
     [preferences setObject:[NSArray arrayWithArray:currentFileExtensions] forKey:NonTextFileExtensionsKey];
