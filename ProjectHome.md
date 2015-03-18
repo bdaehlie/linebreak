@@ -1,0 +1,1 @@
+LineBreak is a simple utility for Mac OS X that converts line breaks in text documents. It can convert to Mac, UNIX®, and Windows/DOS formats. It is written entirely in Cocoa and supports drag and drop from the Finder. LineBreak is a Universal Binary (works on PPC and Intel Macs).
